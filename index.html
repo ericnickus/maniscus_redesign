@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<!--
-    Developer: Rajeev
-    Date: January 13, 2025
--->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Meniscus Group</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -31,16 +29,16 @@
                     </button>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">ABOUT</a>
+                            <a class="nav-link active" href="#" id="scrollToAboutLink">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="partner-with-us.html">PARTNER WITH US</a>
+                            <a class="nav-link" href="partner-with-us.html" id="scrollToPartnerLink">PARTNER WITH US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">INVESTMENT CRITERIA</a>
+                            <a class="nav-link" href="#"  id="scrollToInvestmentLink">INVESTMENT CRITERIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT US</a>
+                            <a class="nav-link" href="#" id="scrollToFooterLink">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -93,7 +91,7 @@
             </div>
         </div>
     </section>
-
+    <div id="partner">
     <section class="about-section">
         <div class="container-fluid">
             <div class="about-content">
@@ -107,13 +105,14 @@
             </div>
         </div>
     </section>
-
+    </div>
+<div id="partner">
     <section class="partner-section">
         <div class="partner-overlay">
             <h1>PARTNER WITH US</h1>
         </div>
     </section>
-
+</div>
     <section class="expanding-section">
         <div class="container-fluid px-0">
             <h2 class="expanding-header">MENISCUS GROUP is currently expanding its portfolio of industrial land and buildings.</h2>
@@ -125,7 +124,7 @@
                     </div>
                     <div class="service-content">
                         <p>For Industrial Real Estate Property Owners Meniscus Group offers individual property owners a personal and flexible approach to free up real estate capital to reinvest in growing their businesses.</p>
-                        <a href="#" class="learn-more font-weight-bold">LEARN MORE</a>
+                        <a href="partner-with-us.html" class="learn-more font-weight-bold">LEARN MORE</a>
                     </div>
                 </div>
                 
@@ -135,8 +134,9 @@
                     </div>
                     <div class="service-content">
                         <p>For Commercial Real Estate Brokers Meniscus Group is laser-focused on anticipating the needs of brokers and exceeding expectations for their clients.</p>
-                        <a href="#" class="learn-more font-weight-bold">LEARN MORE</a>
+                        <a href="partner-with-us.html" class="learn-more font-weight-bold">LEARN MORE</a>
                     </div>
+
                 </div>
                 
                 <div class="service-item">
@@ -145,7 +145,7 @@
                     </div>
                     <div class="service-content">
                         <p>For Private Equity Firms and Real Estate Investment Funds Meniscus Group offers Private Equity Firms and Funds the ultimate flexibility when it comes to meeting aggressive timelines to gain capital efficiency.</p>
-                        <a href="#" class="learn-more font-weight-bold">LEARN MORE</a>
+                        <a href="partner-with-us.html" class="learn-more font-weight-bold">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -153,7 +153,7 @@
     </section>
 
     <div class="divider"></div>
-
+    <div id="investment">
     <section class="investment-section">
         <div class="container-fluid">
             <div class="investment-content">
@@ -162,7 +162,7 @@
             </div>
         </div>
     </section>
-
+</div>
     <div class="divider divider-criteria-section"></div>
     
     <section class="criteria-section">
@@ -196,6 +196,7 @@
 
     <div class="divider divider-criteria-section"></div>
 
+    <div id="scrollToFooter">
     <footer class="site-footer">
         <div class="container-fluid">
             <div class="footer-content">
@@ -204,7 +205,7 @@
                     <h3>INDUSTRIAL REAL ESTATE INVESTMENT</h3>
                     <div class="contact-details">
                         <p>31582 COAST HIGHWAY, SUITE 200, LAGUNA BEACH, CA 92651 | INFO@MENISCUSGROUP.COM</p>
-                        <p>949.276-2272</p>
+                        <p>949.276.2272</p>
                     </div>
                 </div>
                 <div class="footer-logo">
@@ -215,8 +216,35 @@
                 <p>All rights reserved | Website by SM Sold</p>
             </div>
         </div>
-    </footer>    
-        
+    </footer>  
+    </div>
+
+<script>
+    document.getElementById('scrollToFooterLink').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default anchor link behavior
+      const footer = document.querySelector('.site-footer');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('scrollToInvestmentLink').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default anchor link behavior
+      const footer = document.querySelector('.divider');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('scrollToPartnerLink').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default anchor link behavior
+      const footer = document.querySelector('.partner-section');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('scrollToAboutLink').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default anchor link behavior
+      const footer = document.querySelector('.about-section');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
