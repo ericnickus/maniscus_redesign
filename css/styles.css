@@ -445,11 +445,16 @@ a.nav-link.active {
 
 .investment-section h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 26px;
+    font-size: 50px;
     font-weight: 400;
     color: #FFFFFF;
     text-transform: uppercase;
     margin: 0 0 20px 0;
+
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    padding-bottom: 2rem;
 }
 
 .divider {
@@ -464,7 +469,9 @@ a.nav-link.active {
     line-height: 1.2;
     color: #FFFFFF;
     margin: 25px 0 0 0;
-    max-width: 100%;
+    width: 80%;
+    text-align: justify;
+    margin-left: 10%;
 }
 
 @media (max-width: 991px) {
@@ -548,7 +555,7 @@ a.nav-link.active {
   padding-top:2rem;
     margin: 0;
     width: 80%;
-    padding-left: 14%;
+    padding-left: 7%;
     padding-bottom:1rem;
 }
 
@@ -916,3 +923,18 @@ a.nav-link.active {
         font-size: 16px;
     }
 }
+ .lower-header{
+
+  
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    padding-bottom: 2rem;
+
+ }
