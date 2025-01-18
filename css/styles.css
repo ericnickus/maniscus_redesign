@@ -524,26 +524,32 @@ a.nav-link.active {
 
 .criteria-list {
     flex: 1;
-    padding-left: 80px;
+    padding-left: 2%;
     position: relative;
+    margin-bottom:2rem;
 }
 
 /* Vertical Line */
 .criteria-list:before {
-    content: '';
+  
+  /*  content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 1px;
     background: #FFFFFF;
-    opacity: 0.15;
+    opacity: 0.15; */
+    display:none;
 }
 
 .criteria-list ul {
     list-style: none;
-    padding: 80px 0 0;
+  padding-top:2rem;
     margin: 0;
+    width: 80%;
+    padding-left: 14%;
+    padding-bottom:1rem;
 }
 
 .criteria-list li {
@@ -557,12 +563,13 @@ a.nav-link.active {
 }
 
 .criteria-list li:before {
-    content: "■";
+    /* content: "■"; */
+    content: "\2192"; /* Unicode for right arrow */
     position: absolute;
     left: 0;
     top: 4px;
     color: #75B7E1;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
