@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Meniscus Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .brokers{
+            background-color: #002B5C;
+            padding: 50px 40px;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+        }
+
+        .bh2{
+            font-family: 'Oswald', sans-serif;
+            font-size: 50px;
+            font-weight: 400;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin: 0 0 20px 0;
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            padding-bottom: 2rem;
+        }
+
+        .brokers p{
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            line-height: 1.2;
+            color: #FFFFFF;
+            margin: 25px 0 0 0;
+            width: 80%;
+            text-align: justify;
+            margin-left: 10%;
+        }
+
+        .testimonial{
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            line-height: 1.2;
+            color: #FFFFFF;
+            width: 80%;
+            text-align: left;
+            margin-left: 10%;
+        }
+
+        .testh2{
+            font-family: 'Oswald', sans-serif;
+            font-size: 35px;
+            font-weight: 400;
+            color: lightblue;
+            text-transform: uppercase;
+            width: 80%;
+            text-align: left;
+            margin-left: 10%;
+            text-decoration:underline;
+            margin-top: 65px;
+        }
+
+        /* YouTube video styles */
+        .video-container {
+            width: 50%;
+           margin-left:25%;
+            
+            transition: all 0.3s ease;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .video-container.expanded {
+            width: 50%;
+           
+            
+            bottom: auto;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .close-video {
+            display: none;
+            position: absolute;
+            top: -30px;
+            right: 0;
+            background: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .video-container.expanded .close-video {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Meniscus Group">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu-backdrop"></div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <button class="close-menu d-lg-none">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#partner">PARTNER WITH US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#investment">INVESTMENT CRITERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#scrollToFooter">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>                
+    </header>
+
+
+    <div class="brokers">
+        <h2 class="bh2">PRIVATE EQUITY</h2>
+        <p>Meniscus Group offers Private Equity Firms the ultimate flexibility when it comes to meeting aggressive timelines or objectives to gain capital efficiency and a higher MOIC.</p>
+        <p>The company can close coterminously, before or after a deal, as well as work on sale leaseback options to fit specific needs.</p>
+        <p>For Funds looking to dispose of a single asset outside of a portfolio sale, Meniscus Group is the solution. </p>
+        <p>The company is debt-free, self-funded and does'nt have a bureaucratic investment committee requiring secondary approvals. </p>
+        <p>Once an offer is submitted, the deal terms are pre-approved and a firm can trust Meniscus Group to follow through on commitments with certainty and speed. </p>
+
+
+        <h2 class="testh2">16 DAY CLOSE CASE STUDY</h2>
+        <p><i>On December 12, Meniscus Group was approached with an opportunity to purchase a 400,000 square foot 
+            warehouse. The challenge? Closing of the transaction had to happen before December 31 for the seller, 
+            a private equity firm, to achieve their annual success metrics. That morning a previously selected 
+            buyer had been unable to meet its approval timeline. And while other investors were caught up in the 
+            red tape awaiting committee approval, Meniscus Group was able to commit and close just
+             16 days from the letter of intent over the holidays.</i></p>
+        <br>
+        
+        <br>
+
+<br><br>
+    <!-- Video Container -->
+    <div class="video-container">
+        <button class="close-video">✕</button>
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/rhYL3wK3AyE"
+                title="YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container-fluid">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h2>CONTACT</h2>
+                    <h3>INDUSTRIAL REAL ESTATE INVESTMENT</h3>
+                    <div class="contact-details">
+                        <p>31582 COAST HIGHWAY, SUITE 200, LAGUNA BEACH, CA 92651 | INFO@MENISCUSGROUP.COM</p>
+                        <p>949.276.2272</p>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Meniscus Group">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>All rights reserved | Website by SM Sold</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <!-- Video functionality script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoContainer = document.querySelector('.video-container');
+            const closeButton = document.querySelector('.close-video');
+            const iframe = document.querySelector('.video-wrapper iframe');
+            let originalSrc = iframe.src;
+
+            videoContainer.addEventListener('click', function(e) {
+                if (!videoContainer.classList.contains('expanded')) {
+                    videoContainer.classList.add('expanded');
+                    iframe.src = originalSrc + '?autoplay=1';
+                }
+            });
+
+            closeButton.addEventListener('click', function(e) {
+                e.stopPropagation();
+                videoContainer.classList.remove('expanded');
+                iframe.src = originalSrc;
+            });
+        });
+    </script>
+</body>
+</html>
